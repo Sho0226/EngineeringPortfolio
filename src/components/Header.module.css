@@ -1,0 +1,23 @@
+.header {
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+
+.headerInner {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headerTitle {
+  margin-bottom: 5px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.headerSubtitle {
+  font-size: 18px;
+  color: #666;
+}

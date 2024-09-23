@@ -1,0 +1,49 @@
+.article {
+  padding: 80px 0;
+}
+
+.articleInner {
+  max-width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.articleTitle {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.articleImg {
+  margin-bottom: 40px;
+}
+
+.articleBody {
+  margin-bottom: 40px;
+}
+
+.articleInfoTitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.homeLink {
+  text-align: center;
+}
+
+.homeLink a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.homeLink a:hover {
+  background-color: #555;
+}
