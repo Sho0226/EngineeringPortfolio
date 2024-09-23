@@ -1,0 +1,51 @@
+.works {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.inner {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.worksList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.worksItem {
+  width: calc(33.333% - 20px);
+  margin-bottom: 40px;
+  color: #333;
+  text-decoration: none;
+}
+
+.worksImg {
+  margin-bottom: 10px;
+}
+
+.worksName {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.worksInfo {
+  font-size: 14px;
+  color: #666;
+}
+
+@media (width <= 767px) {
+  .worksItem {
+    width: 100%;
+  }
+}
