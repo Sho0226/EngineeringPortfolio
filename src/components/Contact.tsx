@@ -8,7 +8,7 @@ const Contact = () => {
         <p className={styles.lead}>
           お問い合わせは、
           <br className={styles.spOnly} />
-          SNSかメールにてお願いいたします。
+          SNSにてお願いいたします。
         </p>
         <div className={styles.contactList}>
           <a
@@ -27,7 +27,7 @@ const Contact = () => {
           >
             Instagram
           </a>
-          <span className={styles.contactItem}>xxxxxx@gmail.com</span>
+          <span className={styles.contactItem}>GitHub</span>
         </div>
       </div>
     </section>

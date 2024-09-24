@@ -10,7 +10,7 @@ const Navigation = () => {
             <Link href="#works">works</Link>
           </li>
           <li className={styles.gnavItem}>
-            <Link href="#skill">skill</Link>
+            <Link href="#skills">skill</Link>
           </li>
           <li className={styles.gnavItem}>
             <Link href="#about">about</Link>

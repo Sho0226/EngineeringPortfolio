@@ -11,9 +11,8 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Hanako Yamada ポートフォリオ</title>
-        <meta name="description" content="Hanako Yamadaのポートフォリオサイトです" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Portfolio</title>
+        <meta name="description" content="Sho Katsumataのポートフォリオサイトです" />
       </Head>
 
       <Header />
@@ -27,12 +26,8 @@ const Home = () => {
       </main>
 
       <footer className={styles.footer}>
-        <div className={styles.copyright}>&copy; Hanako Yamada</div>
+        <div className={styles.copyright}>&copy; Sho Kastumata</div>
       </footer>
-
-      <div className={styles.pageTop} id="js-page-top">
-        <span className="material-icons-outlined">expand_less</span>
-      </div>
     </div>
   );
 };

@@ -10,21 +10,21 @@ const Works = () => {
         <div className={styles.worksList}>
           <Link href="/works/1" className={styles.worksItem}>
             <p className={styles.worksImg}>
-              <Image src="/img/works-sample-thumb.jpg" alt="" width={400} height={300} />
+              <Image src="/img/works-sample-thumb.jpg" alt="" width={300} height={300} />
             </p>
             <p className={styles.worksName}>作品名が入る</p>
             <p className={styles.worksInfo}>Design / Coding(Responsive)</p>
           </Link>
           <Link href="/works/2" className={styles.worksItem}>
             <p className={styles.worksImg}>
-              <Image src="/img/works-dummy-thumb.jpg" alt="" width={400} height={300} />
+              <Image src="/img/works-dummy-thumb.jpg" alt="" width={300} height={300} />
             </p>
             <p className={styles.worksName}>作品名が入る</p>
             <p className={styles.worksInfo}>Design / Coding(Responsive) / WordPress</p>
           </Link>
           <Link href="/works/3" className={styles.worksItem}>
             <p className={styles.worksImg}>
-              <Image src="/img/works-dummy-thumb.jpg" alt="" width={400} height={300} />
+              <Image src="/img/works-dummy-thumb.jpg" alt="" width={300} height={300} />
             </p>
             <p className={styles.worksName}>作品名が入る</p>
             <p className={styles.worksInfo}>Design</p>
