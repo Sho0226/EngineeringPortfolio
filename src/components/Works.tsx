@@ -1,39 +1,27 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Works.module.css';
 
-const Works = () => {
+const QuestBoard = () => {
+  const quests = [
+    { id: 1, name: 'Project Alpha', difficulty: 'Easy', reward: 'Experience in React' },
+    { id: 2, name: 'Project Beta', difficulty: 'Medium', reward: 'Mastery of Next.js' },
+    { id: 3, name: 'Project Gamma', difficulty: 'Hard', reward: 'Full-stack expertise' },
+  ];
+
   return (
-    <section className={styles.works} id="works">
-      <div className={styles.inner}>
-        <h2 className={styles.title}>works</h2>
-        <div className={styles.worksList}>
-          <Link href="/works/1" className={styles.worksItem}>
-            <p className={styles.worksImg}>
-              <Image src="/img/works-sample-thumb.jpg" alt="" width={300} height={300} />
-            </p>
-            <p className={styles.worksName}>作品名が入る</p>
-            <p className={styles.worksInfo}>Design / Coding(Responsive)</p>
+    <div className={styles.questBoard}>
+      <h2>Works</h2>
+      <div className={styles.questList}>
+        {quests.map((quest) => (
+          <Link href={`/quests/${quest.id}`} key={quest.id} className={styles.questItem}>
+            <h3>{quest.name}</h3>
+            <p>Difficulty: {quest.difficulty}</p>
+            <p>Reward: {quest.reward}</p>
           </Link>
-          <Link href="/works/2" className={styles.worksItem}>
-            <p className={styles.worksImg}>
-              <Image src="/img/works-dummy-thumb.jpg" alt="" width={300} height={300} />
-            </p>
-            <p className={styles.worksName}>作品名が入る</p>
-            <p className={styles.worksInfo}>Design / Coding(Responsive) / WordPress</p>
-          </Link>
-          <Link href="/works/3" className={styles.worksItem}>
-            <p className={styles.worksImg}>
-              <Image src="/img/works-dummy-thumb.jpg" alt="" width={300} height={300} />
-            </p>
-            <p className={styles.worksName}>作品名が入る</p>
-            <p className={styles.worksInfo}>Design</p>
-          </Link>
-          {/* 他の作品も同様に追加 */}
-        </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Works;
+export default QuestBoard;

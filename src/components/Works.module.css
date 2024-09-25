@@ -1,51 +1,42 @@
-.works {
-  padding: 80px 0;
-  background-color: #fff;
+.questBoard {
+  padding: 20px;
+  background-color: #111;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
 }
 
-.inner {
-  max-width: 1000px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-.title {
-  margin-bottom: 40px;
-  font-size: 32px;
-  font-weight: bold;
+.questBoard h2 {
+  margin-bottom: 20px;
+  color: #4caf50;
   text-align: center;
 }
 
-.worksList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.questList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.worksItem {
-  width: calc(33.333% - 20px);
-  margin-bottom: 40px;
-  color: #333;
+.questItem {
+  padding: 15px;
+  color: #fff;
   text-decoration: none;
+  background-color: #222;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
 }
 
-.worksImg {
+.questItem:hover {
+  transform: translateY(-5px);
+}
+
+.questItem h3 {
   margin-bottom: 10px;
+  color: #4caf50;
 }
 
-.worksName {
-  margin-bottom: 5px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.worksInfo {
+.questItem p {
+  margin: 5px 0;
   font-size: 14px;
-  color: #666;
-}
-
-@media (width <= 767px) {
-  .worksItem {
-    width: 100%;
-  }
 }

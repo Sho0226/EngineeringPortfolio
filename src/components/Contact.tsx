@@ -1,37 +1,40 @@
 import styles from './Contact.module.css';
 
-const Contact = () => {
+const Messaging = () => {
   return (
-    <section className={styles.contact} id="contact">
-      <div className={styles.inner}>
-        <h2 className={styles.title}>contact</h2>
-        <p className={styles.lead}>
-          お問い合わせは、
-          <br className={styles.spOnly} />
-          SNSにてお願いいたします。
-        </p>
-        <div className={styles.contactList}>
-          <a
-            className={styles.contactItem}
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Twitter
-          </a>
-          <a
-            className={styles.contactItem}
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>
-          <span className={styles.contactItem}>GitHub</span>
-        </div>
+    <div className={styles.messaging}>
+      <h2>Contact System</h2>
+      <div className={styles.messageList}>
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.messageItem}
+        >
+          <span className={styles.messageIcon}>🐦</span>
+          <span className={styles.messagePlatform}>Twitter</span>
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.messageItem}
+        >
+          <span className={styles.messageIcon}>📷</span>
+          <span className={styles.messagePlatform}>Instagram</span>
+        </a>
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.messageItem}
+        >
+          <span className={styles.messageIcon}>🐙</span>
+          <span className={styles.messagePlatform}>GitHub</span>
+        </a>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Contact;
+export default Messaging;

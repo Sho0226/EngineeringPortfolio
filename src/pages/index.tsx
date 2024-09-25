@@ -1,32 +1,45 @@
 import Head from 'next/head';
+import { useState } from 'react';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Header from '../components/Header';
-import Navigation from '../components/Navigation';
 import Skills from '../components/Skills';
+import TimeLine from '../components/TimeLine';
 import Works from '../components/Works';
 import styles from './index.module.css';
 
 const Home = () => {
+  const [currentView, setCurrentView] = useState('world');
+
+  const renderView = () => {
+    switch (currentView) {
+      case 'world':
+        return <About />;
+      case 'stats':
+        return <Skills />;
+      case 'timeline':
+        return <TimeLine />;
+      case 'quests':
+        return <Works />;
+      case 'messages':
+        return <Contact />;
+      default:
+        return <About />;
+    }
+  };
+
   return (
-    <div className={styles.container}>
+    <div className={styles.gameContainer}>
+      <Header setCurrentView={setCurrentView} />
       <Head>
-        <title>Portfolio</title>
-        <meta name="description" content="Sho Katsumataのポートフォリオサイトです" />
+        <title>Sho Katsumata`s RPG Portfolio</title>
+        <meta name="description" content="Sho Katsumataのゲーム風ポートフォリオサイトです" />
       </Head>
 
-      <Header />
-      <Navigation />
+      <main className={styles.gameMain}>{renderView()}</main>
 
-      <main className={styles.main}>
-        <Works />
-        <Skills />
-        <About />
-        <Contact />
-      </main>
-
-      <footer className={styles.footer}>
-        <div className={styles.copyright}>&copy; Sho Kastumata</div>
+      <footer className={styles.gameFooter}>
+        <div className={styles.copyright}>&copy; Sho Katsumata</div>
       </footer>
     </div>
   );
