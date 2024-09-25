@@ -7,52 +7,50 @@ import {
   RadialLinearScale,
   Tooltip,
 } from 'chart.js';
+import React from 'react';
 import { Radar } from 'react-chartjs-2';
 import styles from './Skills.module.css';
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
-const CharacterStats = () => {
-  const skills = {
-    フロントエンド: {
+type SkillLevels = {
+  [key: string]: number;
+};
+
+type SkillCategories = {
+  [key: string]: SkillLevels;
+};
+
+const SkillChart: React.FC = () => {
+  const skills: SkillCategories = {
+    frontend: {
+      TypeScript: 90,
       React: 85,
-      'Next.js': 75,
-      TypeScript: 80,
+      'Next.js': 80,
       CSS: 80,
     },
-    バックエンド: {
-      'Node.js': 70,
-      Python: 65,
-      Django: 60,
-      SQL: 75,
-      Go: 50,
-      Ruby: 55,
+    backend: {
+      'Node.js': 50,
+      Python: 70,
+      Django: 50,
+      Prisma: 70,
+      SQL: 50,
+      Ruby: 30,
+      Go: 40,
     },
-    DevOps: {
-      Git: 85,
-      Docker: 65,
-      AWS: 60,
-      PostgreSQL: 70,
-    },
+    DevOps: { AWS: 50, Git: 85, Docker: 65 },
   };
 
-  type SkillCategories = 'フロントエンド' | 'バックエンド' | 'DevOps';
-
-  const getAverageSkill = (category: SkillCategories) => {
-    const values = Object.values(skills[category] as Record<string, number>);
-    return values.reduce((a, b) => a + b, 0) / values.length;
-  };
+  const allSkills = Object.values(skills).flatMap(Object.entries);
+  const skillNames = allSkills.map(([name]) => name);
+  const skillLevels = allSkills.map(([, level]) => level);
 
   const data = {
-    labels: ['フロントエンド', 'バックエンド', 'DevOps'],
+    labels: skillNames,
     datasets: [
       {
         label: 'スキルレベル',
-        data: [
-          getAverageSkill('フロントエンド'),
-          getAverageSkill('バックエンド'),
-          getAverageSkill('DevOps'),
-        ],
+        data: skillLevels,
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
         borderColor: 'rgba(75, 192, 192, 1)',
         borderWidth: 1,
@@ -64,10 +62,14 @@ const CharacterStats = () => {
     scales: {
       r: {
         angleLines: {
-          display: false,
+          display: true,
         },
         suggestedMin: 0,
         suggestedMax: 100,
+        ticks: {
+          stepSize: 20,
+          backdropColor: 'rgba(0, 0, 0, 0)',
+        },
       },
     },
     plugins: {
@@ -77,36 +79,41 @@ const CharacterStats = () => {
     },
   };
 
+  const descriptions = [
+    '30%~触ったことがある',
+    '50%~調べれば扱うことができる',
+    '80%~よく普段から触っている',
+  ].join('\n'); // 改行を追加
+
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>キャラクターステータス</h2>
-      <div className={styles.chartContainer}>
-        <Radar data={data} options={options} />
+    <div className={styles.chartContainer}>
+      <div className={styles.title}>
+        <h2>Skill Chart</h2>
       </div>
-      {Object.entries(skills).map(([category, categorySkills]) => (
-        <div key={category} className={styles.categoryContainer}>
-          <h3 className={styles.categoryTitle}>{category}</h3>
-          <div className={styles.skillsGrid}>
+
+      <Radar data={data} options={options} />
+      <div className={styles.categoryTitle}>
+        <div className={styles.skillDescription}>
+          <p>{descriptions}</p>
+        </div>
+        {Object.entries(skills).map(([category, categorySkills]) => (
+          <div key={category} className={styles.categorySection}>
+            <h3>{category}</h3>
+
             {Object.entries(categorySkills).map(([skill, level]) => (
               <div key={skill} className={styles.skillItem}>
                 <span className={styles.skillName}>{skill}</span>
                 <div className={styles.skillBar}>
-                  <div
-                    className={styles.skillBarFill}
-                    style={{ width: `${level}%` }}
-                    role="progressbar"
-                    aria-valuenow={level}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                  />
+                  <div className={styles.skillLevel} style={{ width: `${level}%` }} />
                 </div>
+                <span className={styles.skillPercentage}>{level}%</span>
               </div>
             ))}
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
 
-export default CharacterStats;
+export default SkillChart;

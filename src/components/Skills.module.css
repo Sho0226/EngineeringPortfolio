@@ -1,11 +1,10 @@
-.container {
+.chartContainer {
   width: 100%;
-  max-width: 48rem;
-  padding: 1.5rem;
+  max-width: 600px;
+  padding: 20px;
   margin: 0 auto;
-  background-color: #000;
-  border: 2px solid #4caf50;
-  border-radius: 0.5rem;
+  color: #fff;
+  background: #1e1e1e;
 }
 
 .title {
@@ -16,14 +15,6 @@
   text-align: center;
 }
 
-.chartContainer {
-  margin-bottom: 2rem;
-}
-
-.categoryContainer {
-  margin-bottom: 1.5rem;
-}
-
 .categoryTitle {
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
@@ -31,39 +22,41 @@
   color: #4caf50;
 }
 
-.skillsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+.categorySection {
+  margin-top: 20px;
 }
 
 .skillItem {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .skillName {
-  margin-bottom: 0.25rem;
-  font-size: 0.875rem;
-  color: #fff;
+  min-width: 100px;
 }
 
 .skillBar {
-  width: 100%;
-  height: 0.625rem;
+  flex: 1;
+  height: 20px;
   overflow: hidden;
-  background-color: #4a4a4a;
-  border-radius: 9999px;
+  background-color: #333;
+  border-radius: 10px;
 }
 
-.skillBarFill {
+.skillLevel {
   height: 100%;
-  background-color: #4caf50;
-  border-radius: 9999px;
+  background-color: rgb(75 192 192 / 80%);
 }
 
-@media (width <= 640px) {
-  .skillsGrid {
-    grid-template-columns: 1fr;
-  }
+.skillPercentage {
+  margin-left: 10px;
+}
+
+.skillDescription {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center; /* 中央に寄せる */
+  white-space: pre-line; /* 改行をサポート */
 }
