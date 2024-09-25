@@ -1,7 +1,9 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import styles from './About.module.css';
 
 export default function WorldProfile() {
+  const { basePath } = useRouter();
   return (
     <div className={styles.container}>
       <div className={styles.worldSection}>
@@ -10,7 +12,7 @@ export default function WorldProfile() {
       <div className={styles.profileSection}>
         <div className={styles.profileImage}>
           <Image
-            src="/imgs/profile.jpg"
+            src={`${basePath}/imgs/profile.jpg`}
             alt="Sho Katsumata"
             width={200}
             height={200}
@@ -42,7 +44,7 @@ export default function WorldProfile() {
         </div>
       </div>
       <div className={styles.pixelCharacter}>
-        <Image src="/imgs/frog.png" alt="Pixel Character" width={64} height={64} />
+        <Image src={`${basePath}/imgs/frog.png`} alt="Pixel Character" width={64} height={64} />
       </div>
     </div>
   );
