@@ -1,7 +1,9 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import styles from './About.module.css';
 
 export default function WorldProfile() {
+  const { basePath } = useRouter();
   return (
     <div className={styles.container}>
       <div className={styles.worldSection}>
@@ -10,7 +12,7 @@ export default function WorldProfile() {
       <div className={styles.profileSection}>
         <div className={styles.profileImage}>
           <Image
-            src="/imgs/profile.jpg"
+            src={`${basePath}/imgs/profile.jpg`}
             alt="Sho Katsumata"
             width={200}
             height={200}
@@ -21,10 +23,8 @@ export default function WorldProfile() {
           <h2 className={styles.profileName}>Sho Katsumata</h2>
           <p className={styles.profileTitle}>Full-stack Developer</p>
           <div className={styles.profileDescription}>
-            <p>
-              東洋大学情報連携学部で、プログラミング、数理、コミュニケーションを集中的に学習。
-              各学年での主な成果：
-            </p>
+            <p>東洋大学情報連携学部で、プログラミング、数理、コミュニケーションを集中的に学習。</p>
+            <p> 各学年での主な成果：</p>
             <ul>
               <li>
                 1年次：Python、HTML、CSS、JavaScriptの基礎を習得。チームでのWebサービス開発を経験。
@@ -42,7 +42,7 @@ export default function WorldProfile() {
         </div>
       </div>
       <div className={styles.pixelCharacter}>
-        <Image src="/imgs/frog.png" alt="Pixel Character" width={64} height={64} />
+        <Image src={`${basePath}/imgs/frog.png`} alt="Pixel Character" width={64} height={64} />
       </div>
     </div>
   );
