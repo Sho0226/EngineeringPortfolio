@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import CharacterStats from '../components/CharacterStats';
-import GameMenu from '../components/GameMenu';
-import GameWorld from '../components/GameWorld';
-import Messaging from '../components/Messaging';
-import QuestBoard from '../components/QuestBoard';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Header from '../components/Header';
+import Skills from '../components/Skills';
 import TimeLine from '../components/TimeLine';
+import Works from '../components/Works';
 import styles from './index.module.css';
 
 const Home = () => {
@@ -14,30 +14,29 @@ const Home = () => {
   const renderView = () => {
     switch (currentView) {
       case 'world':
-        return <GameWorld />;
+        return <About />;
       case 'stats':
-        return <CharacterStats />;
+        return <Skills />;
       case 'timeline':
         return <TimeLine />;
       case 'quests':
-        return <QuestBoard />;
+        return <Works />;
       case 'messages':
-        return <Messaging />;
+        return <Contact />;
       default:
-        return <GameWorld />;
+        return <About />;
     }
   };
 
   return (
     <div className={styles.gameContainer}>
+      <Header setCurrentView={setCurrentView} />
       <Head>
         <title>Sho Katsumata`s RPG Portfolio</title>
         <meta name="description" content="Sho Katsumataのゲーム風ポートフォリオサイトです" />
       </Head>
 
       <main className={styles.gameMain}>{renderView()}</main>
-
-      <GameMenu setCurrentView={setCurrentView} />
 
       <footer className={styles.gameFooter}>
         <div className={styles.copyright}>&copy; Sho Katsumata</div>
