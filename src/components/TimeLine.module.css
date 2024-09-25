@@ -17,7 +17,7 @@
 
 .timeline {
   position: relative;
-  padding-left: 2rem;
+  padding: 2rem;
 }
 
 .timeline::before {
@@ -75,6 +75,7 @@
 .description {
   font-size: 1rem;
   color: #ccc;
+  white-space: pre-line;
 }
 
 .iconContainer {
@@ -99,6 +100,17 @@
 
 .current .icon {
   color: #2196f3;
+}
+
+.scroll {
+  height: 70vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera 用 */
 }
 
 @media (width <= 768px) {
