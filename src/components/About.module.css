@@ -36,51 +36,6 @@
   text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
 }
 
-.menuGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
-  width: 100%;
-  max-width: 600px;
-}
-
-.menuItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  color: #fff;
-  text-decoration: none;
-  background-color: #2a2a2a;
-  border: 2px solid #4caf50;
-  border-radius: 8px;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.menuItem:hover,
-.menuItem:focus {
-  box-shadow: 0 5px 15px rgb(76 175 80 / 40%);
-  transform: translateY(-5px);
-}
-
-.menuItemIcon {
-  margin-bottom: 0.5rem;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-  color: #4caf50;
-}
-
-.menuItemLabel {
-  font-size: 0.9rem;
-  text-align: center;
-}
-
 .profileSection {
   position: relative;
   z-index: 1;
@@ -101,6 +56,12 @@
   overflow: hidden;
   border: 4px solid #4caf50;
   border-radius: 50%;
+}
+
+.profilePicture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .profileInfo {
@@ -124,6 +85,13 @@
   max-width: 600px;
   font-size: 1rem;
   line-height: 1.6;
+  text-align: left;
+}
+
+.profileDescription ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
 }
 
 .pixelCharacter {
