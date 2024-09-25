@@ -1,0 +1,151 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 4rem);
+  padding: 2rem;
+  overflow: hidden;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+.container::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  content: '';
+  background-image: url('/img/pixel-world-bg.png');
+  background-repeat: repeat;
+  opacity: 0.1;
+}
+
+.worldSection {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4caf50;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #2a2a2a;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.menuItem:hover,
+.menuItem:focus {
+  box-shadow: 0 5px 15px rgb(76 175 80 / 40%);
+  transform: translateY(-5px);
+}
+
+.menuItemIcon {
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #4caf50;
+}
+
+.menuItemLabel {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.profileSection {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: rgb(42 42 42 / 80%);
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 4px solid #4caf50;
+  border-radius: 50%;
+}
+
+.profileInfo {
+  text-align: center;
+}
+
+.profileName {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.profileTitle {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #9e9e9e;
+}
+
+.profileDescription {
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.pixelCharacter {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
+}
+
+@media (width >= 768px) {
+  .profileSection {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .profileImage {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  .profileInfo {
+    text-align: left;
+  }
+}

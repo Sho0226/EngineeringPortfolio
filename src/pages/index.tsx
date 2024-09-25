@@ -1,32 +1,46 @@
 import Head from 'next/head';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Header from '../components/Header';
-import Navigation from '../components/Navigation';
-import Skills from '../components/Skills';
-import Works from '../components/Works';
+import { useState } from 'react';
+import CharacterStats from '../components/CharacterStats';
+import GameMenu from '../components/GameMenu';
+import GameWorld from '../components/GameWorld';
+import Messaging from '../components/Messaging';
+import QuestBoard from '../components/QuestBoard';
+import TimeLine from '../components/TimeLine';
 import styles from './index.module.css';
 
 const Home = () => {
+  const [currentView, setCurrentView] = useState('world');
+
+  const renderView = () => {
+    switch (currentView) {
+      case 'world':
+        return <GameWorld />;
+      case 'stats':
+        return <CharacterStats />;
+      case 'timeline':
+        return <TimeLine />;
+      case 'quests':
+        return <QuestBoard />;
+      case 'messages':
+        return <Messaging />;
+      default:
+        return <GameWorld />;
+    }
+  };
+
   return (
-    <div className={styles.container}>
+    <div className={styles.gameContainer}>
       <Head>
-        <title>Portfolio</title>
-        <meta name="description" content="Sho Katsumataのポートフォリオサイトです" />
+        <title>Sho Katsumata`s RPG Portfolio</title>
+        <meta name="description" content="Sho Katsumataのゲーム風ポートフォリオサイトです" />
       </Head>
 
-      <Header />
-      <Navigation />
+      <main className={styles.gameMain}>{renderView()}</main>
 
-      <main className={styles.main}>
-        <Works />
-        <Skills />
-        <About />
-        <Contact />
-      </main>
+      <GameMenu setCurrentView={setCurrentView} />
 
-      <footer className={styles.footer}>
-        <div className={styles.copyright}>&copy; Sho Kastumata</div>
+      <footer className={styles.gameFooter}>
+        <div className={styles.copyright}>&copy; Sho Katsumata</div>
       </footer>
     </div>
   );

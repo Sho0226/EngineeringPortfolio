@@ -1,0 +1,25 @@
+.gameMenu {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #111;
+  border-top: 2px solid #4caf50;
+}
+
+.gameMenu button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+}
+
+.gameMenu button:hover {
+  background-color: #45a049;
+}

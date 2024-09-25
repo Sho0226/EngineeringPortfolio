@@ -1,0 +1,116 @@
+.timelineContainer {
+  max-width: 800px;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: rgb(0 0 0 / 70%);
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+}
+
+.timelineTitle {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #4caf50;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(76 175 80 / 50%);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  content: '';
+  background-color: #4caf50;
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timelineItem::before {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 12px;
+  height: 12px;
+  content: '';
+  background-color: #4caf50;
+  border-radius: 50%;
+}
+
+.timelineItem.current::before {
+  background-color: #2196f3;
+  box-shadow: 0 0 10px #2196f3;
+}
+
+.timelineItemContent {
+  padding: 1rem;
+  background-color: rgb(76 175 80 / 10%);
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+}
+
+.date {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #4caf50;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.description {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.iconContainer {
+  position: absolute;
+  top: -2px;
+  left: -14px;
+  padding: 5px;
+  background-color: #1a1a1a;
+  border: 2px solid #4caf50;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #4caf50;
+}
+
+.current .iconContainer {
+  border-color: #2196f3;
+}
+
+.current .icon {
+  color: #2196f3;
+}
+
+@media (width <= 768px) {
+  .timelineContainer {
+    padding: 1rem;
+  }
+
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timelineItem {
+    padding-left: 1rem;
+  }
+}
