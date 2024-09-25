@@ -23,10 +23,8 @@ export default function WorldProfile() {
           <h2 className={styles.profileName}>Sho Katsumata</h2>
           <p className={styles.profileTitle}>Full-stack Developer</p>
           <div className={styles.profileDescription}>
-            <p>
-              東洋大学情報連携学部で、プログラミング、数理、コミュニケーションを集中的に学習。
-              各学年での主な成果：
-            </p>
+            <p>東洋大学情報連携学部で、プログラミング、数理、コミュニケーションを集中的に学習。</p>
+            <p> 各学年での主な成果：</p>
             <ul>
               <li>
                 1年次：Python、HTML、CSS、JavaScriptの基礎を習得。チームでのWebサービス開発を経験。
