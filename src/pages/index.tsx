@@ -32,7 +32,7 @@ const Home = () => {
     <div className={styles.gameContainer}>
       <Header setCurrentView={setCurrentView} />
       <Head>
-        <title>Sho Katsumata`s RPG Portfolio</title>
+        <title>Sho Katsumata`s Portfolio</title>
         <meta name="description" content="Sho Katsumataのゲーム風ポートフォリオサイトです" />
       </Head>
 
