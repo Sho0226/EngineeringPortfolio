@@ -11,15 +11,57 @@ const Works = () => {
     },
     {
       id: 2,
-      name: 'タスク管理アプリ',
-      description: 'Reactとフックを使用したTodoアプリ',
-      image: '/images/todo-app.jpg',
+      name: 'Minesweeper',
+      description: 'Next.jsで作成したマインスイーパー',
+      image: '/imgs/minesweeper.png',
     },
     {
       id: 3,
-      name: 'ブログプラットフォーム',
-      description: 'フルスタックJavaScriptで構築したブログシステム',
-      image: '/images/blog-platform.jpg',
+      name: 'Tetris',
+      description: 'Next.jsで作成したテトリス',
+      image: '/imgs/tetris.png',
+    },
+    {
+      id: 4,
+      name: 'Tetris',
+      description: 'Next.jsで作成したブロック崩し',
+      image: '/imgs/block.png',
+    },
+    {
+      id: 5,
+      name: 'Chess',
+      description: 'Next.jsで作成したチェス',
+      image: '/imgs/chess.png',
+    },
+    {
+      id: 6,
+      name: 'LightsOut',
+      description: 'Next.jsで作成した点灯ゲーム',
+      image: '/imgs/lightsout.png',
+    },
+    {
+      id: 7,
+      name: 'TodoList',
+      description: 'Full-Stack TypeScriptを用いたTodoList',
+      image: '/imgs/todo.png',
+    },
+    {
+      id: 8,
+      name: 'AIHeadlines',
+      description: 'AIを用いて最適化されたNEWSを提供するPlatform',
+      image: '/imgs/AIHeadlines.png',
+    },
+    {
+      id: 9,
+      name: 'Chronicle',
+      description: '【7月_Vol.8】ハッカソン技育CAMP2024の出場作品',
+      image: '/imgs/Chronicle.png',
+    },
+    {
+      id: 9,
+      name: '花火大会オンライン',
+      description: '【9月_Vol.14】ハッカソン技育CAMP2024の出場作品',
+      image: '/imgs/hanabi.png',
     },
   ];
 

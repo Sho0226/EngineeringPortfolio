@@ -9,9 +9,23 @@
 .gameMain {
   display: flex;
   flex: 1;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 2.5rem;
+  color: #4caf50;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #ccc;
 }
 
 .gameFooter {
