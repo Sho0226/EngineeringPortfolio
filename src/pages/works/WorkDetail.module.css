@@ -31,6 +31,38 @@
   color: #4caf50;
 }
 
+.source {
+  font-size: 1.8rem;
+  color: #4caf50;
+}
+
+.sourceCode {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-style: #4caf50;
+}
+
+.sourceCode:hover {
+  text-decoration: underline;
+  text-decoration-color: #4caf50;
+}
+
+.deploy {
+  font-size: 1.8rem;
+  color: #4caf50;
+}
+
+.deployCode {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-style: #4caf50;
+}
+
+.deployCode:hover {
+  text-decoration: underline;
+  text-decoration-color: #4caf50;
+}
+
 .techList {
   display: flex;
   flex-wrap: wrap;

@@ -5,30 +5,137 @@ import styles from './WorkDetail.module.css';
 const projectsData = [
   {
     id: 1,
-    name: 'オセロ',
-    description: 'Next.jsで作成した個人ポートフォリオ',
-    image: '/images/portfolio.jpg',
+    name: 'Othello',
+    image: '/imgs/othello.png',
     fullDescription:
-      'このポートフォリオサイトはNext.jsを使用して構築されました。レスポンシブデザインを採用し、ダークモードにも対応しています。',
-    technologies: ['Next.js', 'React', 'CSS Modules'],
+      'このオセロゲームは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
+    technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
+    Deploy: 'https://sho0226.github.io/NewOthello/',
+    sourceCode: 'https://github.com/Sho0226/NewOthello/',
   },
   {
     id: 2,
-    name: 'タスク管理アプリ',
-    description: 'Reactとフックを使用したTodoアプリ',
-    image: '/images/todo-app.jpg',
+    name: 'Minesweeper',
+    image: '/imgs/minesweeper.png',
     fullDescription:
-      'このTodoアプリはReactとReact Hooksを使用して開発されました。ユーザーはタスクの追加、編集、削除、完了のマークが可能です。',
-    technologies: ['React', 'React Hooks', 'LocalStorage'],
+      'このマインスイーパーは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
+    technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
+    Deploy: 'https://sho0226.github.io/minesweeper/',
+    sourceCode: 'https://github.com/Sho0226/minesweeper/',
   },
   {
     id: 3,
-    name: 'ブログプラットフォーム',
-    description: 'フルスタックJavaScriptで構築したブログシステム',
-    image: '/images/blog-platform.jpg',
+    name: 'Tetris',
+    image: '/imgs/tetris.png',
     fullDescription:
-      'このブログプラットフォームはNode.js、Express、MongoDB、Reactを使用したフルスタックJavaScriptアプリケーションです。ユーザー認証、記事の作成・編集・削除機能を実装しています。',
-    technologies: ['Node.js', 'Express', 'MongoDB', 'React', 'JWT'],
+      'このテトリスは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
+    technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
+    Deploy: 'https://sho0226.github.io/Tetris/',
+    sourceCode: 'https://github.com/Sho0226/Tetris/',
+  },
+  {
+    id: 4,
+    name: 'Breaking-blocks',
+    image: '/imgs/block.png',
+    fullDescription:
+      'このブロック崩しは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
+    technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
+    Deploy: 'https://sho0226.github.io/Breaking-blocks/',
+    sourceCode: 'https://github.com/Sho0226/Breaking-blocks/',
+  },
+  {
+    id: 5,
+    name: 'Chess',
+    image: '/imgs/chess.png',
+    fullDescription:
+      'このチェスは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
+    technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
+    Deploy: 'https://sho0226.github.io/Chess/',
+    sourceCode: 'https://github.com/Sho0226/Chess/',
+  },
+  {
+    id: 6,
+    name: 'LightsOut',
+    image: '/imgs/lightsout.png',
+    fullDescription:
+      'このライツアウトは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
+    technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
+    Deploy: 'https://sho0226.github.io/LightsOut/',
+    sourceCode: 'https://github.com/Sho0226/LightsOut/',
+  },
+  {
+    id: 7,
+    name: 'TodoList',
+    image: '/imgs/todo.png',
+    fullDescription:
+      'このTodoListは、TypeScriptをフルスタックで活用するための学習プロジェクトとして作成しました。フロントエンドからバックエンドまで、幅広い技術を実践的に習得することを目的としています。',
+    technologies: [
+      'TypeScript',
+      'Next.js',
+      'React',
+      'CSS Modules',
+      'Fastify',
+      'Prisma',
+      'PostgreSQL',
+      'Aspida',
+    ],
+    Deploy: 'https://todolist-6aet.onrender.com/',
+    sourceCode: 'https://github.com/Sho0226/TodoList/',
+  },
+  {
+    id: 8,
+    name: 'AIHeadlines',
+    image: '/imgs/AIHeadlines.png',
+    fullDescription:
+      'AIHeadlinesは、AIを活用して個人に最適化されたニュースを提供するプラットフォームとして開発しました。ユーザーの好みに基づいたキーワード検索やおすすめ記事を通じて、よりパーソナライズされたニュース体験を提供します。',
+    technologies: [
+      'TypeScript',
+      'Next.js',
+      'React',
+      'CSS Modules',
+      'Fastify',
+      'Prisma',
+      'PostgreSQL',
+      'Aspida',
+    ],
+    Deploy: 'https://aiheadlines.onrender.com/',
+    sourceCode: 'https://github.com/Sho0226/AIHeadlines',
+  },
+  {
+    id: 9,
+    name: 'Chronicle',
+    image: '/imgs/Chronicle.png',
+    fullDescription:
+      '【7月_Vol.8】ハッカソン技育CAMP2024の出場作品 努力賞受賞<br>青空文庫の名作小説を、新しい形で体験できるアプリ。<br>AIが各シーンにぴったりの情景を描写し、合成音声で物語を読み上げます。<br>視覚と聴覚を融合した、没入感のある読書体験を提供します。',
+    technologies: [
+      'TypeScript',
+      'Next.js',
+      'React',
+      'CSS Modules',
+      'Fastify',
+      'Prisma',
+      'PostgreSQL',
+      'Aspida',
+    ],
+    sourceCode: 'https://todolist-6aet.onrender.com/',
+  },
+  {
+    id: 10,
+    name: '花火大会オンライン',
+    image: '/imgs/hanabi.png',
+    fullDescription:
+      '【9月_Vol.14】ハッカソン技育CAMP2024の出場作品 最優秀賞受賞<br>ユーザーがオンライン上で花火玉を自作し、共有されたルームで自分の作った花火を打ち上げ、仮想空間で楽しむことができます。リアルタイムで他の参加者と共に、独自の花火を通じた一体感を体験できます。',
+    technologies: [
+      'TypeScript',
+      'Next.js',
+      'React',
+      'CSS Modules',
+      'Fastify',
+      'Prisma',
+      'PostgreSQL',
+      'Aspida',
+    ],
+    sourceCode: 'https://github.com/Sho0226/Fireworks-Display-Online',
   },
 ];
 
@@ -45,7 +152,10 @@ export default function WorkDetail() {
     <div className={styles.container}>
       <h1 className={styles.title}>{project.name}</h1>
       <img src={project.image} alt={project.name} className={styles.image} />
-      <p className={styles.description}>{project.fullDescription}</p>
+      <p
+        className={styles.description}
+        dangerouslySetInnerHTML={{ __html: project.fullDescription }}
+      />
       <h2 className={styles.subtitle}>使用技術</h2>
       <ul className={styles.techList}>
         {project.technologies.map((tech, index) => (
@@ -54,8 +164,28 @@ export default function WorkDetail() {
           </li>
         ))}
       </ul>
+      {project.sourceCode && (
+        <>
+          <h2 className={styles.source}>ソースコード</h2>
+          <p className={styles.sourceCode}>
+            <a href={project.sourceCode} target="_blank" rel="noopener noreferrer">
+              {project.sourceCode}
+            </a>
+          </p>
+        </>
+      )}
+      {project.Deploy !== null && project.Deploy?.trim() !== '' && (
+        <>
+          <h2 className={styles.deploy}>デプロイ先</h2>
+          <p className={styles.deployCode}>
+            <a href={project.Deploy} target="_blank" rel="noopener noreferrer">
+              {project.Deploy}
+            </a>
+          </p>
+        </>
+      )}
       <button onClick={() => router.push('/works')} className={styles.backLink}>
-        Works
+        戻る
       </button>
     </div>
   );

@@ -23,7 +23,7 @@ const Works = () => {
     },
     {
       id: 4,
-      name: 'Tetris',
+      name: 'Breaking-Blocks',
       description: 'Next.jsで作成したブロック崩し',
       image: '/imgs/block.png',
     },
@@ -58,7 +58,7 @@ const Works = () => {
       image: '/imgs/Chronicle.png',
     },
     {
-      id: 9,
+      id: 10,
       name: '花火大会オンライン',
       description: '【9月_Vol.14】ハッカソン技育CAMP2024の出場作品',
       image: '/imgs/hanabi.png',

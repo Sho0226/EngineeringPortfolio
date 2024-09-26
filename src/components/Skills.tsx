@@ -28,10 +28,11 @@ const SkillChart: React.FC = () => {
       React: 85,
       'Next.js': 80,
       CSS: 80,
+      Python: 70,
     },
     backend: {
       Prisma: 70,
-      Python: 70,
+
       'Node.js': 50,
       Django: 50,
       SQL: 50,
