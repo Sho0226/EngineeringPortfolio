@@ -1,42 +1,20 @@
 import Head from 'next/head';
-import { useState } from 'react';
-import About from '../components/About';
-import Contact from '../components/Contact';
 import Header from '../components/Header';
-import Skills from '../components/Skills';
-import TimeLine from '../components/TimeLine';
-import Works from '../components/Works';
 import styles from './index.module.css';
 
 const Home = () => {
-  const [currentView, setCurrentView] = useState('world');
-
-  const renderView = () => {
-    switch (currentView) {
-      case 'world':
-        return <About />;
-      case 'stats':
-        return <Skills />;
-      case 'timeline':
-        return <TimeLine />;
-      case 'quests':
-        return <Works />;
-      case 'messages':
-        return <Contact />;
-      default:
-        return <About />;
-    }
-  };
-
   return (
     <div className={styles.gameContainer}>
-      <Header setCurrentView={setCurrentView} />
+      <Header />
       <Head>
         <title>Sho Katsumata`s Portfolio</title>
         <meta name="description" content="Sho Katsumataのゲーム風ポートフォリオサイトです" />
       </Head>
 
-      <main className={styles.gameMain}>{renderView()}</main>
+      <main className={styles.gameMain}>
+        <h1>Welcome to Sho Katsumata`s Portfolio</h1>
+        <p>各ページに移動して詳細をご覧ください。</p>
+      </main>
 
       <footer className={styles.gameFooter}>
         <div className={styles.copyright}>&copy; Sho Katsumata</div>

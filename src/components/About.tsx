@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import styles from './About.module.css';
 
-export default function WorldProfile() {
+export default function About() {
   const { basePath } = useRouter();
   return (
     <div className={styles.container}>

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from './WorkDetail.module.css';
 
@@ -6,7 +5,7 @@ import styles from './WorkDetail.module.css';
 const projectsData = [
   {
     id: 1,
-    name: 'ポートフォリオサイト',
+    name: 'オセロ',
     description: 'Next.jsで作成した個人ポートフォリオ',
     image: '/images/portfolio.jpg',
     fullDescription:
@@ -55,9 +54,9 @@ export default function WorkDetail() {
           </li>
         ))}
       </ul>
-      <Link href="/works" className={styles.backLink}>
-        作品一覧に戻る
-      </Link>
+      <button onClick={() => router.push('/works')} className={styles.backLink}>
+        Works
+      </button>
     </div>
   );
 }

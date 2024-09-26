@@ -5,9 +5,9 @@ const Works = () => {
   const projects = [
     {
       id: 1,
-      name: 'ポートフォリオサイト',
-      description: 'Next.jsで作成した個人ポートフォリオ',
-      image: '/images/portfolio.jpg',
+      name: 'Othello',
+      description: 'Next.jsで作成したオフラインオセロ',
+      image: '/imgs/othello.png',
     },
     {
       id: 2,
@@ -28,10 +28,12 @@ const Works = () => {
       <h2 className={styles.title}>Works</h2>
       <div className={styles.projectGrid}>
         {projects.map((project) => (
-          <Link href={`/works/${project.id}`} key={project.id} className={styles.projectCard}>
-            <img src={project.image} alt={project.name} className={styles.projectImage} />
-            <h3 className={styles.projectTitle}>{project.name}</h3>
-            <p className={styles.projectDescription}>{project.description}</p>
+          <Link href={`/works/${project.id}?view=quests`} key={project.id} passHref>
+            <div className={styles.projectCard}>
+              <img src={project.image} alt={project.name} className={styles.projectImage} />
+              <h3 className={styles.projectTitle}>{project.name}</h3>
+              <p className={styles.projectDescription}>{project.description}</p>
+            </div>
           </Link>
         ))}
       </div>
