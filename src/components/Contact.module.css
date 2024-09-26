@@ -1,5 +1,5 @@
 .messaging {
-  padding: 20px;
+  padding: 50px;
   background-color: #111;
   border: 2px solid #4caf50;
   border-radius: 10px;
@@ -14,7 +14,7 @@
 .messageList {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
 
 .messageItem {
