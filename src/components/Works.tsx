@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { basePath } from '../../next.config';
 import styles from './Works.module.css';
 
 const Works = () => {
@@ -7,61 +8,61 @@ const Works = () => {
       id: 1,
       name: 'Othello',
       description: 'Next.jsで作成したオフラインオセロ',
-      image: '/imgs/othello.png',
+      image: `${basePath}/imgs/othello.png`,
     },
     {
       id: 2,
       name: 'Minesweeper',
       description: 'Next.jsで作成したマインスイーパー',
-      image: '/imgs/minesweeper.png',
+      image: `${basePath}/imgs/minesweeper.png`,
     },
     {
       id: 3,
       name: 'Tetris',
       description: 'Next.jsで作成したテトリス',
-      image: '/imgs/tetris.png',
+      image: `${basePath}/imgs/tetris.png`,
     },
     {
       id: 4,
       name: 'Breaking-Blocks',
       description: 'Next.jsで作成したブロック崩し',
-      image: '/imgs/block.png',
+      image: `${basePath}/imgs/block.png`,
     },
     {
       id: 5,
       name: 'Chess',
       description: 'Next.jsで作成したチェス',
-      image: '/imgs/chess.png',
+      image: `${basePath}/imgs/chess.png`,
     },
     {
       id: 6,
       name: 'LightsOut',
       description: 'Next.jsで作成した点灯ゲーム',
-      image: '/imgs/lightsout.png',
+      image: `${basePath}/imgs/lightsout.png`,
     },
     {
       id: 7,
       name: 'TodoList',
       description: 'Full-Stack TypeScriptを用いたTodoList',
-      image: '/imgs/todo.png',
+      image: `${basePath}/imgs/todo.png`,
     },
     {
       id: 8,
       name: 'AIHeadlines',
       description: 'AIを用いて最適化されたNEWSを提供するPlatform',
-      image: '/imgs/AIHeadlines.png',
+      image: `${basePath}/imgs/AIHeadlines.png`,
     },
     {
       id: 9,
       name: 'Chronicle',
       description: '【7月_Vol.8】ハッカソン技育CAMP2024の出場作品',
-      image: '/imgs/Chronicle.png',
+      image: `${basePath}/imgs/Chronicle.png`,
     },
     {
       id: 10,
       name: '花火大会オンライン',
       description: '【9月_Vol.14】ハッカソン技育CAMP2024の出場作品',
-      image: '/imgs/hanabi.png',
+      image: `${basePath}/imgs/hanabi.png`,
     },
   ];
 

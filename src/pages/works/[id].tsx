@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { basePath } from '../../../next.config';
 import styles from './WorkDetail.module.css';
 
 // この部分は実際のデータソース（データベースやAPIなど）に置き換えてください
@@ -6,7 +7,7 @@ const projectsData = [
   {
     id: 1,
     name: 'Othello',
-    image: '/imgs/othello.png',
+    image: `${basePath}/imgs/othello.png`,
     fullDescription:
       'このオセロゲームは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
     technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
@@ -16,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     name: 'Minesweeper',
-    image: '/imgs/minesweeper.png',
+    image: `${basePath}/imgs/minesweeper.png`,
     fullDescription:
       'このマインスイーパーは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
     technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
@@ -26,7 +27,7 @@ const projectsData = [
   {
     id: 3,
     name: 'Tetris',
-    image: '/imgs/tetris.png',
+    image: `${basePath}/imgs/tetris.png`,
     fullDescription:
       'このテトリスは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
     technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
@@ -36,7 +37,7 @@ const projectsData = [
   {
     id: 4,
     name: 'Breaking-blocks',
-    image: '/imgs/block.png',
+    image: `${basePath}/imgs/block.png`,
     fullDescription:
       'このブロック崩しは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
     technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
@@ -46,7 +47,7 @@ const projectsData = [
   {
     id: 5,
     name: 'Chess',
-    image: '/imgs/chess.png',
+    image: `${basePath}/imgs/chess.png`,
     fullDescription:
       'このチェスは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
     technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
@@ -56,7 +57,7 @@ const projectsData = [
   {
     id: 6,
     name: 'LightsOut',
-    image: '/imgs/lightsout.png',
+    image: `${basePath}/imgs/lightsout.png`,
     fullDescription:
       'このライツアウトは、TypeScriptとReactを実践的に学ぶために開発を始めました。ゲームのロジックを構築することで、プログラミングの基礎と応用力を身につけることを目指します。',
     technologies: ['TypeScript', 'Next.js', 'React', 'CSS Modules'],
@@ -66,7 +67,7 @@ const projectsData = [
   {
     id: 7,
     name: 'TodoList',
-    image: '/imgs/todo.png',
+    image: `${basePath}/imgs/todo.png`,
     fullDescription:
       'このTodoListは、TypeScriptをフルスタックで活用するための学習プロジェクトとして作成しました。フロントエンドからバックエンドまで、幅広い技術を実践的に習得することを目的としています。',
     technologies: [
@@ -85,7 +86,7 @@ const projectsData = [
   {
     id: 8,
     name: 'AIHeadlines',
-    image: '/imgs/AIHeadlines.png',
+    image: `${basePath}/imgs/AIHeadlines.png`,
     fullDescription:
       'AIHeadlinesは、AIを活用して個人に最適化されたニュースを提供するプラットフォームとして開発しました。ユーザーの好みに基づいたキーワード検索やおすすめ記事を通じて、よりパーソナライズされたニュース体験を提供します。',
     technologies: [
@@ -104,7 +105,7 @@ const projectsData = [
   {
     id: 9,
     name: 'Chronicle',
-    image: '/imgs/Chronicle.png',
+    image: `${basePath}/imgs/Chronicle.png`,
     fullDescription:
       '【7月_Vol.8】ハッカソン技育CAMP2024の出場作品 努力賞受賞<br>青空文庫の名作小説を、新しい形で体験できるアプリ。<br>AIが各シーンにぴったりの情景を描写し、合成音声で物語を読み上げます。<br>視覚と聴覚を融合した、没入感のある読書体験を提供します。',
     technologies: [
@@ -122,7 +123,7 @@ const projectsData = [
   {
     id: 10,
     name: '花火大会オンライン',
-    image: '/imgs/hanabi.png',
+    image: `${basePath}/imgs/hanabi.png`,
     fullDescription:
       '【9月_Vol.14】ハッカソン技育CAMP2024の出場作品 最優秀賞受賞<br>ユーザーがオンライン上で花火玉を自作し、共有されたルームで自分の作った花火を打ち上げ、仮想空間で楽しむことができます。リアルタイムで他の参加者と共に、独自の花火を通じた一体感を体験できます。',
     technologies: [
