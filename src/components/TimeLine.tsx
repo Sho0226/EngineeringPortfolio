@@ -45,9 +45,40 @@ const timelineData: TimelineItem[] = [
   {
     id: 5,
     date: '2024年8月',
-    title: '大学卒業',
-    description: '情報工学部 優秀卒業生賞受賞',
-    icon: 'graduation',
+    title: '株式会社アウトソーシングテクノロジー 3daysインターンシップ',
+    description:
+      '多様なエンジニアリング分野を体験し、キャリアの可能性を広げる3日間のプロジェクト型シミュレーションプログラム',
+    icon: 'briefcase',
+  },
+  {
+    id: 6,
+    date: '2024年8月',
+    title: '株式会社ジーニー 1dayインターンシップ',
+    description:
+      '広告配信システムの高速化に挑戦し、ボトルネック解消を目指す実践型バックエンドインターン',
+    icon: 'briefcase',
+  },
+  {
+    id: 7,
+    date: '2024年9月',
+    title: 'ARアドバンストテクノロジ株式会社 3daysインターンシップ',
+    description: 'AWSを活用し、クラウドとデータでビジネス課題を解決する3日間の実践型プログラム',
+    icon: 'briefcase',
+  },
+  {
+    id: 8,
+    date: '2024年9月',
+    title: '株式会社メディアドゥ 3daysインターンシップ',
+    description:
+      '電子書籍配信システムのパフォーマンス改善に挑戦し、3日間で成果を発表する実践型インターン',
+    icon: 'briefcase',
+  },
+  {
+    id: 9,
+    date: '2024年9月',
+    title: '【9月_Vol.14】ハッカソン技育CAMP2024 最優秀賞 受賞',
+    description: 'フロントエンドをメインに担当',
+    icon: 'award',
   },
 ];
 

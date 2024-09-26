@@ -6,7 +6,7 @@ const Messaging = () => {
       <h2>Contact System</h2>
       <div className={styles.messageList}>
         <a
-          href="https://twitter.com/"
+          href="https://twitter.com/sho_26_ts"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.messageItem}
@@ -15,7 +15,7 @@ const Messaging = () => {
           <span className={styles.messagePlatform}>Twitter</span>
         </a>
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/sho__nii?igsh=MWR2OGJ2Y3VnejdwZg%3D%3D&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.messageItem}
@@ -24,7 +24,7 @@ const Messaging = () => {
           <span className={styles.messagePlatform}>Instagram</span>
         </a>
         <a
-          href="https://github.com/"
+          href="https://github.com/Sho0226"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.messageItem}
