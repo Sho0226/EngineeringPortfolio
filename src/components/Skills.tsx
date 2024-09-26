@@ -28,17 +28,18 @@ const SkillChart: React.FC = () => {
       React: 85,
       'Next.js': 80,
       CSS: 80,
+      Python: 70,
     },
     backend: {
-      'Node.js': 50,
-      Python: 70,
-      Django: 50,
       Prisma: 70,
+
+      'Node.js': 50,
+      Django: 50,
       SQL: 50,
-      Ruby: 30,
       Go: 40,
+      Ruby: 30,
     },
-    DevOps: { AWS: 50, Git: 85, Docker: 65 },
+    DevOps: { AWS: 50, Docker: 65, Git: 85 },
   };
 
   const allSkills = Object.values(skills).flatMap(Object.entries);

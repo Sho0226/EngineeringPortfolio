@@ -1,22 +1,81 @@
 import Link from 'next/link';
 import styles from './Works.module.css';
 
-const QuestBoard = () => {
-  const quests = [
-    { id: 1, name: 'Project Alpha', difficulty: 'Easy', reward: 'Experience in React' },
-    { id: 2, name: 'Project Beta', difficulty: 'Medium', reward: 'Mastery of Next.js' },
-    { id: 3, name: 'Project Gamma', difficulty: 'Hard', reward: 'Full-stack expertise' },
+const Works = () => {
+  const projects = [
+    {
+      id: 1,
+      name: 'Othello',
+      description: 'Next.jsで作成したオフラインオセロ',
+      image: '/imgs/othello.png',
+    },
+    {
+      id: 2,
+      name: 'Minesweeper',
+      description: 'Next.jsで作成したマインスイーパー',
+      image: '/imgs/minesweeper.png',
+    },
+    {
+      id: 3,
+      name: 'Tetris',
+      description: 'Next.jsで作成したテトリス',
+      image: '/imgs/tetris.png',
+    },
+    {
+      id: 4,
+      name: 'Breaking-Blocks',
+      description: 'Next.jsで作成したブロック崩し',
+      image: '/imgs/block.png',
+    },
+    {
+      id: 5,
+      name: 'Chess',
+      description: 'Next.jsで作成したチェス',
+      image: '/imgs/chess.png',
+    },
+    {
+      id: 6,
+      name: 'LightsOut',
+      description: 'Next.jsで作成した点灯ゲーム',
+      image: '/imgs/lightsout.png',
+    },
+    {
+      id: 7,
+      name: 'TodoList',
+      description: 'Full-Stack TypeScriptを用いたTodoList',
+      image: '/imgs/todo.png',
+    },
+    {
+      id: 8,
+      name: 'AIHeadlines',
+      description: 'AIを用いて最適化されたNEWSを提供するPlatform',
+      image: '/imgs/AIHeadlines.png',
+    },
+    {
+      id: 9,
+      name: 'Chronicle',
+      description: '【7月_Vol.8】ハッカソン技育CAMP2024の出場作品',
+      image: '/imgs/Chronicle.png',
+    },
+    {
+      id: 10,
+      name: '花火大会オンライン',
+      description: '【9月_Vol.14】ハッカソン技育CAMP2024の出場作品',
+      image: '/imgs/hanabi.png',
+    },
   ];
 
   return (
-    <div className={styles.questBoard}>
-      <h2>Works</h2>
-      <div className={styles.questList}>
-        {quests.map((quest) => (
-          <Link href={`/quests/${quest.id}`} key={quest.id} className={styles.questItem}>
-            <h3>{quest.name}</h3>
-            <p>Difficulty: {quest.difficulty}</p>
-            <p>Reward: {quest.reward}</p>
+    <div className={styles.worksContainer}>
+      <h2 className={styles.title}>Works</h2>
+      <div className={styles.projectGrid}>
+        {projects.map((project) => (
+          <Link href={`/works/${project.id}?view=quests`} key={project.id} passHref>
+            <div className={styles.projectCard}>
+              <img src={project.image} alt={project.name} className={styles.projectImage} />
+              <h3 className={styles.projectTitle}>{project.name}</h3>
+              <p className={styles.projectDescription}>{project.description}</p>
+            </div>
           </Link>
         ))}
       </div>
@@ -24,4 +83,4 @@ const QuestBoard = () => {
   );
 };
 
-export default QuestBoard;
+export default Works;

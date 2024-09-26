@@ -1,0 +1,95 @@
+.container {
+  max-width: 800px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #111;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #4caf50;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.description {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #4caf50;
+}
+
+.source {
+  font-size: 1.8rem;
+  color: #4caf50;
+}
+
+.sourceCode {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-style: #4caf50;
+}
+
+.sourceCode:hover {
+  text-decoration: underline;
+  text-decoration-color: #4caf50;
+}
+
+.deploy {
+  font-size: 1.8rem;
+  color: #4caf50;
+}
+
+.deployCode {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-style: #4caf50;
+}
+
+.deployCode:hover {
+  text-decoration: underline;
+  text-decoration-color: #4caf50;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+.techItem {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  color: #111;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+.backLink {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #111;
+  text-decoration: none;
+  background-color: #4caf50;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.backLink:hover {
+  background-color: #45a049;
+}
