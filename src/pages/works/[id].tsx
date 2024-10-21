@@ -69,7 +69,7 @@ const projectsData = [
     name: 'TodoList',
     image: `${basePath}/imgs/todo.png`,
     fullDescription:
-      'このTodoListは、TypeScriptをフルスタックで活用するための学習プロジェクトとして作成しました。フロントエンドからバックエンドまで、幅広い技術を実践的に習得することを目的としています。',
+      'このTodoListは、TypeScriptをフルスタックで活用するための学習プロジェクトとして作成しました。フロントエンドからバックエンドまで、幅広い技術を実践的に習得することを目的としています。現在JWTとBcyptを用いて認証機能を追加中',
     technologies: [
       'TypeScript',
       'Next.js',
