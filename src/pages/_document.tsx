@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="ja">
       <Head>
-        <meta name="description" content="PoPortfolio" />
+        <meta name="description" content="Portfolio" />
         <link rel="icon" href="favicon.png" />
       </Head>
       <body>
