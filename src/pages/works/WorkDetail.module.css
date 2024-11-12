@@ -63,6 +63,22 @@
   text-decoration-color: #4caf50;
 }
 
+.note {
+  font-size: 1.8rem;
+  color: #4caf50;
+}
+
+.noteURL {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-style: #4caf50;
+}
+
+.noteURL:hover {
+  text-decoration: underline;
+  text-decoration-color: #4caf50;
+}
+
 .techList {
   display: flex;
   flex-wrap: wrap;

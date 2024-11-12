@@ -64,6 +64,12 @@ const Works = () => {
       description: '【9月_Vol.14】ハッカソン技育CAMP2024の出場作品',
       image: `${basePath}/imgs/hanabi.png`,
     },
+    {
+      id: 11,
+      name: 'ポケモン図鑑',
+      description: 'PokéAPIを用いたReact開発',
+      image: `${basePath}/imgs/pokemon.png`,
+    },
   ];
 
   return (

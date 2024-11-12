@@ -138,6 +138,16 @@ const projectsData = [
     ],
     sourceCode: 'https://github.com/Sho0226/Fireworks-Display-Online',
   },
+  {
+    id: 11,
+    name: 'ポケモン図鑑',
+    image: `${basePath}/imgs/pokemon.png`,
+    fullDescription: 'PokéAPIを用いてアウトプット中心にReact開発をしました。',
+    technologies: ['JavaScript', 'React', 'PokéAPI'],
+    Deploy: 'https://sho0226.github.io/pokemon-app/',
+    sourceCode: 'https://github.com/Sho0226/Fireworks-Display-Online',
+    note: 'https://qiita.com/Sho0226/items/0c1b33b5d2e1077a2498',
+  },
 ];
 
 export default function WorkDetail() {
@@ -185,6 +195,18 @@ export default function WorkDetail() {
           </p>
         </>
       )}
+
+      {project.note !== null && project.note?.trim() !== '' && (
+        <>
+          <h2 className={styles.note}>投稿記事</h2>
+          <p className={styles.noteURL}>
+            <a href={project.note} target="_blank" rel="noopener noreferrer">
+              {project.note}
+            </a>
+          </p>
+        </>
+      )}
+
       <button onClick={() => router.push('/works')} className={styles.backLink}>
         戻る
       </button>
