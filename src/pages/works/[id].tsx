@@ -146,7 +146,7 @@ const projectsData = [
     technologies: ['JavaScript', 'React', 'PokéAPI'],
     Deploy: 'https://sho0226.github.io/pokemon-app/',
     sourceCode: 'https://github.com/Sho0226/Fireworks-Display-Online',
-    note: 'https://qiita.com/Sho0226/items/0c1b33b5d2e1077a2498',
+    note: 'https://qiita.com/Sho0226/items/c6d497c6f62ff68399fa',
   },
 ];
 
