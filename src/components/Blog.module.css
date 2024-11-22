@@ -21,6 +21,7 @@
 .projectCard {
   display: flex;
   flex-direction: column;
+  width: 25vw;
   overflow: hidden;
   color: #fff;
   text-decoration: none;
