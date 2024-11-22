@@ -16,6 +16,9 @@ const Header = () => {
       <Link href="/works" passHref>
         <button>Works</button>
       </Link>
+      <Link href="/blog" passHref>
+        <button>blog</button>
+      </Link>
       <Link href="/messages" passHref>
         <button>Contact</button>
       </Link>
