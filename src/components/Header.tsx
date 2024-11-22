@@ -17,7 +17,7 @@ const Header = () => {
         <button>Works</button>
       </Link>
       <Link href="/blog" passHref>
-        <button>blog</button>
+        <button>Blog</button>
       </Link>
       <Link href="/messages" passHref>
         <button>Contact</button>
