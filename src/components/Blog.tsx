@@ -9,6 +9,11 @@ const Blog = () => {
       name: 'ポケモン図鑑',
       image: `${basePath}/imgs/pokemon_blog.png`,
     },
+    {
+      blog: 'https://qiita.com/Sho0226/items/f54f26de793419ad6b4d',
+      name: '改善',
+      image: `${basePath}/imgs/type_blog.png`,
+    },
   ];
 
   return (
