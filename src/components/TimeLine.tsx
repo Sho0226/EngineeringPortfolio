@@ -80,6 +80,13 @@ const timelineData: TimelineItem[] = [
     description: 'フロントエンドをメインに担当',
     icon: 'award',
   },
+  {
+    id: 10,
+    date: '2024年12月',
+    title: '技育博 vol.5',
+    description: '【9月_Vol.14】ハッカソン技育CAMP2024 の成果物をブラッシュアップして展示',
+    icon: 'award',
+  },
 ];
 
 const IconComponent: React.FC<{ icon: TimelineItem['icon'] }> = ({ icon }) => {
