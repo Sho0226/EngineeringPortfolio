@@ -83,7 +83,7 @@ const Works = () => {
       <h2 className={styles.title}>Works</h2>
       <div className={styles.projectGrid}>
         {projects.map((project) => (
-          <Link href={`/works/${project.id}?view=quests`} key={project.id} passHref>
+          <Link href={`/works/${project.id}?view=quests`} key={project.id}>
             <div className={styles.projectCard}>
               <img src={project.image} alt={project.name} className={styles.projectImage} />
               <h3 className={styles.projectTitle}>{project.name}</h3>
