@@ -152,10 +152,10 @@ const projectsData = [
     id: 12,
     name: 'Fullstack Template',
     image: `${basePath}/imgs/template.png`,
-    fullDescription: '',
+    fullDescription: 'モダンな技術を採用した自分好みのフルスタックフレームワークを作成しました。',
     technologies: [],
     Deploy: '',
-    sourceCode: '',
+    sourceCode: 'https://github.com/Sho0226/Next-Hono-Template',
     note: '',
   },
 ];
