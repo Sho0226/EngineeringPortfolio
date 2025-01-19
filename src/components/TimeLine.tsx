@@ -87,6 +87,13 @@ const timelineData: TimelineItem[] = [
     description: '【9月_Vol.14】ハッカソン技育CAMP2024 の成果物をブラッシュアップして展示',
     icon: 'award',
   },
+  {
+    id: 11,
+    date: '2025年2月-4月',
+    title: '株式会社PR TIMES 長期インターンシップ',
+    description: '',
+    icon: 'briefcase',
+  },
 ];
 
 const IconComponent: React.FC<{ icon: TimelineItem['icon'] }> = ({ icon }) => {
