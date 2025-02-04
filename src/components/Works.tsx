@@ -70,6 +70,12 @@ const Works = () => {
       description: 'PokéAPIを用いたReact開発',
       image: `${basePath}/imgs/pokemon.png`,
     },
+    {
+      id: 11,
+      name: 'fullstack Template',
+      description: 'モダンな技術を使ったフルスタックフレームワーク',
+      image: `${basePath}/imgs/pokemon.png`,
+    },
   ];
 
   return (
