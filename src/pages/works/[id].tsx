@@ -148,6 +148,16 @@ const projectsData = [
     sourceCode: 'https://github.com/Sho0226/Fireworks-Display-Online',
     note: 'https://qiita.com/Sho0226/items/c6d497c6f62ff68399fa',
   },
+  {
+    id: 12,
+    name: 'Fullstack Template',
+    image: ``,
+    fullDescription: '',
+    technologies: [],
+    Deploy: '',
+    sourceCode: '',
+    note: '',
+  },
 ];
 
 export default function WorkDetail() {

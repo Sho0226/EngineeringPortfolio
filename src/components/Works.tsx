@@ -71,10 +71,10 @@ const Works = () => {
       image: `${basePath}/imgs/pokemon.png`,
     },
     {
-      id: 11,
+      id: 12,
       name: 'fullstack Template',
       description: 'モダンな技術を使ったフルスタックフレームワーク',
-      image: `${basePath}/imgs/pokemon.png`,
+      image: ``,
     },
   ];
 
