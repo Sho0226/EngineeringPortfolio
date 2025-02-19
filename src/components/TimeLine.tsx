@@ -91,7 +91,7 @@ const timelineData: TimelineItem[] = [
     id: 11,
     date: '2025年2月-4月',
     title: '株式会社PR TIMES 長期インターンシップ',
-    description: '',
+    description: 'TypeScriptとReactを用いたフロントエンド業務',
     icon: 'briefcase',
   },
 ];
