@@ -151,7 +151,7 @@ const projectsData = [
   {
     id: 12,
     name: 'Fullstack Template',
-    image: ``,
+    image: `${basePath}/imgs/template.png`,
     fullDescription: '',
     technologies: [],
     Deploy: '',

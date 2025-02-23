@@ -74,7 +74,7 @@ const Works = () => {
       id: 12,
       name: 'fullstack Template',
       description: 'モダンな技術を使ったフルスタックフレームワーク',
-      image: ``,
+      image: `${basePath}/imgs/template.png`,
     },
   ];
 
