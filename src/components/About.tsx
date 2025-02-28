@@ -12,7 +12,7 @@ export default function About() {
       <div className={styles.profileSection}>
         <div className={styles.profileImage}>
           <Image
-            src={`${basePath}/imgs/profile.jpg`}
+            src={`${basePath}/imgs/profile.jpeg`}
             alt="Sho Katsumata"
             width={200}
             height={200}

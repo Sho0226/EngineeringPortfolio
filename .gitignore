@@ -11,6 +11,7 @@
 # next.js
 /.next/
 /out/
+/public/imgs
 
 # production
 /build
@@ -33,6 +34,3 @@ npm-debug.log*
 
 # vercel
 .vercel
-
-# image
-/public/imgs/*
