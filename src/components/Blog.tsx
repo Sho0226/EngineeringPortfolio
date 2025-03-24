@@ -14,6 +14,11 @@ const Blog = () => {
       name: '改善',
       image: `${basePath}/imgs/type_blog.png`,
     },
+    {
+      blog: 'https://zenn.dev/sho0226/articles/8f8e130371b117',
+      name: 'Edge Runtime 環境で始める Next.js + Hono + Supabase + Prisma 開発',
+      image: `${basePath}/imgs/template_blog.png`,
+    },
   ];
 
   return (
