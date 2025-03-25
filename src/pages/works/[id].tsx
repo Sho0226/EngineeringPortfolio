@@ -163,9 +163,9 @@ const projectsData = [
       'Supabase',
       'Vercel',
     ],
-    Deploy: '',
+    Deploy: 'next-hono-template.vercel.app',
     sourceCode: 'https://github.com/Sho0226/Next-Hono-Template',
-    note: '',
+    note: 'https://zenn.dev/sho0226/articles/8f8e130371b117',
   },
 ];
 
