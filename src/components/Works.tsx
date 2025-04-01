@@ -76,6 +76,12 @@ const Works = () => {
       description: 'モダンな技術を使ったフルスタックフレームワーク',
       image: `${basePath}/imgs/template.png`,
     },
+    {
+      id: 13,
+      name: 'TsDaily',
+      description: '習慣的に学習するための勉強アプリ',
+      image: `${basePath}/imgs/portfolio.png`,
+    },
   ];
 
   return (
