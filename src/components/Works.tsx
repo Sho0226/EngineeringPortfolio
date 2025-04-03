@@ -80,7 +80,7 @@ const Works = () => {
       id: 13,
       name: 'TsDaily',
       description: '習慣的に学習するための勉強アプリ',
-      image: `${basePath}/imgs/portfolio.png`,
+      image: `${basePath}/imgs/daily.png`,
     },
   ];
 

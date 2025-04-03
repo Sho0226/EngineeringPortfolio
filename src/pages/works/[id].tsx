@@ -167,6 +167,17 @@ const projectsData = [
     sourceCode: 'https://github.com/Sho0226/Next-Hono-Template',
     note: 'https://zenn.dev/sho0226/articles/8f8e130371b117',
   },
+  {
+    id: 13,
+    name: 'TsDaily',
+    image: `${basePath}/imgs/daily.png`,
+    fullDescription:
+      'TsDailyは、習慣的に学習するための勉強アプリです。<br>毎日の学習を記録し、進捗を可視化することで、モチベーションを維持しやすくします。<br>また、学習内容を振り返ることで、より深い理解を促進します。',
+    technologies: ['TypeScript', 'Next.js', 'React'],
+    Deploy: '',
+    sourceCode: '',
+    note: '',
+  },
 ];
 
 export default function WorkDetail() {
