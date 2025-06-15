@@ -1,5 +1,5 @@
 {
-  "name": "next-ts-starter",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,6 +17,7 @@
     "typecheck": "npm run hcm && tsc --noEmit"
   },
   "dependencies": {
+    "axios": "^1.9.0",
     "chart.js": "^4.4.4",
     "lucide-react": "^0.445.0",
     "next": "14.2.3",
@@ -26,7 +27,7 @@
     "shadcn-ui": "^0.9.1"
   },
   "devDependencies": {
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.19.0",
     "@types/react": "^18.2.67",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "eslint": "^8.57.0",
@@ -40,6 +41,7 @@
     "stylelint-config-recess-order": "^5.0.1",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-prettier": "^5.0.0",
-    "typescript": "^5.1.6"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
