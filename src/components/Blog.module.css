@@ -23,16 +23,16 @@
   flex-direction: column;
   justify-content: center;
   height: 250px;
+  padding: 20px;
   overflow: hidden;
   color: #000;
   text-decoration: none;
+  background-color: #fff;
+  border: 20px solid #a1a5ff;
   border-radius: 10px;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  border: 20px solid #a1a5ff;
-  padding: 20px;
-  background-color: #fff;
 }
 
 .projectCard:hover {
