@@ -13,24 +13,26 @@
 }
 
 .projectGrid {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
 .projectCard {
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  justify-content: center;
+  height: 250px;
   overflow: hidden;
-  color: #fff;
+  color: #000;
   text-decoration: none;
-  background-color: #222;
-  border: 1px solid #4caf50;
   border-radius: 10px;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  border: 20px solid #a1a5ff;
+  padding: 20px;
+  background-color: #fff;
 }
 
 .projectCard:hover {
@@ -38,15 +40,9 @@
   transform: translateY(-5px);
 }
 
-.projectImage {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
 .projectTitle {
-  padding: 15px;
   margin: 0;
-  font-size: 1.5rem;
-  color: #4caf50;
+  font-size: 1.3rem;
+  text-align: center;
+  word-break: break-word;
 }

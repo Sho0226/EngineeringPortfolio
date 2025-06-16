@@ -1,6 +1,6 @@
 import type { GetStaticProps } from 'next';
 import { fetchAxiosData, type Article } from '../api/zenn';
-import Blog from '../components/BlogSample';
+import Blog from '../components/Blog';
 import Header from '../components/Header';
 
 type Props = {
