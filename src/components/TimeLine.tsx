@@ -1,4 +1,4 @@
-import { Award, Briefcase, GraduationCap, Laptop, School, Trophy } from 'lucide-react';
+import { Award, Briefcase, GraduationCap, Laptop, Notebook, School, Trophy } from 'lucide-react';
 import React from 'react';
 import styles from './TimeLine.module.css';
 
@@ -7,7 +7,7 @@ interface TimelineItem {
   date: string;
   title: string;
   description: string;
-  icon: 'trophy' | 'briefcase' | 'graduation' | 'award' | 'school' | 'laptop';
+  icon: 'trophy' | 'briefcase' | 'graduation' | 'award' | 'school' | 'laptop' | 'notebook';
 }
 
 const timelineData: TimelineItem[] = [
@@ -89,7 +89,14 @@ const timelineData: TimelineItem[] = [
   },
   {
     id: 11,
-    date: '2025年2月-7月',
+    date: '2025年6月',
+    title: '【6月_Vol.4】ハッカソン技育CAMP2025 参加',
+    description: 'フロントエンドをメインに担当',
+    icon: 'notebook',
+  },
+  {
+    id: 12,
+    date: '2025年2月-10月',
     title: '株式会社PR TIMES 長期インターンシップ',
     description: 'TypeScriptとReactを用いたフロントエンド業務',
     icon: 'briefcase',
@@ -110,6 +117,8 @@ const IconComponent: React.FC<{ icon: TimelineItem['icon'] }> = ({ icon }) => {
       return <School className={styles.icon} />;
     case 'laptop':
       return <Laptop className={styles.icon} />;
+    case 'notebook':
+      return <Notebook className={styles.icon} />;
     default:
       return null;
   }
