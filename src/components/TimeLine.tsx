@@ -96,13 +96,20 @@ const timelineData: TimelineItem[] = [
   },
   {
     id: 12,
-    date: '2025年2月-2026年3月',
-    title: '株式会社PR TIMES 長期インターンシップ',
-    description: 'TypeScriptとReactを用いたフロントエンド業務',
-    icon: 'briefcase',
+    date: '2026年3月',
+    title: '東洋大学 卒業',
+    description: '情報連携学部 卒業',
+    icon: 'graduation',
   },
   {
     id: 13,
+    date: '2026年4月',
+    title: '株式会社PR TIMES 入社',
+    description: 'ソフトウェアエンジニアとしてフロントエンド開発を担当',
+    icon: 'briefcase',
+  },
+  {
+    id: 14,
     date: '2026年5月',
     title: 'フロントエンドカンファレンス名古屋 2026 登壇',
     description:

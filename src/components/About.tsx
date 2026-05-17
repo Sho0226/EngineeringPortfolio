@@ -23,24 +23,9 @@ export default function About() {
           <h2 className={styles.profileName}>Sho Katsumata</h2>
           <p className={styles.profileTitle}>Full-stack Developer</p>
           <div className={styles.profileDescription}>
-            <p>東洋大学情報連携学部で、プログラミング、数理、コミュニケーションを集中的に学習。</p>
-            <p> 各学年での主な成果：</p>
-            <ul>
-              <li>
-                1年次：Python、HTML、CSS、JavaScriptの基礎を習得。チームでのWebサービス開発を経験。
-              </li>
-              <li>2年次：AI活用やPythonによるデータ解析、Gitによるソース管理を実践。</li>
-              <li>
-                3年次：プログラミングサークル「INIAD.ts」に所属し、TypeScriptを通じてモダンWeb開発に取り組む。
-              </li>
-              <li>
-                4年次：長期インターンを通して実践的なチーム開発スキル、フロントエンドスキルを学習
-              </li>
-            </ul>
-            <p>
-              IoT時代に必要なOS、ネットワーク、コンピュータ・サイエンスの体系的な知識を学び、
-              UXデザインに関する実践的スキルを習得。ユーザー体験の向上を目指した設計を学習中。
-            </p>
+            <p>株式会社PR TIMESに所属するソフトウェアエンジニア。Webのパフォーマンスや信頼性に関心があります。</p>
+            <p>学生時代はプログラミングサークルでの活動、複数のハッカソン、長期インターンシップを通じて、TypeScriptを中心としたモダンなWeb開発の実践的スキルを磨きました。</p>
+            <p>現在は、ユーザーに価値を届けるプロダクト開発に取り組んでいます。</p>
           </div>
         </div>
       </div>
