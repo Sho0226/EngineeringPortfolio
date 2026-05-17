@@ -96,10 +96,18 @@ const timelineData: TimelineItem[] = [
   },
   {
     id: 12,
-    date: '2025年2月-10月',
+    date: '2025年2月-2026年3月',
     title: '株式会社PR TIMES 長期インターンシップ',
     description: 'TypeScriptとReactを用いたフロントエンド業務',
     icon: 'briefcase',
+  },
+  {
+    id: 13,
+    date: '2026年5月',
+    title: 'フロントエンドカンファレンス名古屋 2026 登壇',
+    description:
+      '「JSDOMの限界と実ブラウザテスト - VITEST BROWSER MODE実践」というタイトルで登壇',
+    icon: 'trophy',
   },
 ];
 
